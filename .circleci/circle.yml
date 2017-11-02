@@ -11,4 +11,4 @@ machine:
         - dotnet publish -o publish
     test:
         override:
-        - echo "no tests"
+        - echo "no tests 2"
