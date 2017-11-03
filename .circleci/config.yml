@@ -1,8 +1,7 @@
 version: 2
 jobs:
   build:
-    docker:
-        - image: liviumateescu/hello-world
+    machine: true
     steps:
       - checkout
       - run: pip install -r requirements/dev.txt
