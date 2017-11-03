@@ -11,7 +11,7 @@ jobs:
               echo "<<<<<<<<<<<<<<<<<<<<<-------------------->>>>>>>>>>>>>>>>>>>>>>>>>>1"
               apt-get install apt-transport-https
               echo "<<<<<<<<<<<<<<<<<<<<<-------------------->>>>>>>>>>>>>>>>>>>>>>>>>>2"
-              echo "deb [arch=amd64] https://aptmo.trafficmanager.net/repos/dotnet-release/ trusty main" > /etc/apt/sources.list.d/dotnetdev.list
+              echo "deb [arch=amd64] https://aptmo.trafficmanager.net/repos/microsoft-ubuntu-trusty-prod trusty main" > /etc/apt/sources.list.d/dotnetdev.list
               echo "<<<<<<<<<<<<<<<<<<<<<-------------------->>>>>>>>>>>>>>>>>>>>>>>>>>3"
               apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 417A0893
               echo "<<<<<<<<<<<<<<<<<<<<<-------------------->>>>>>>>>>>>>>>>>>>>>>>>>>4"
