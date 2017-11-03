@@ -8,10 +8,15 @@ jobs:
       - run: 
           command: |  
               apt-get update
+              echo "<<<<<<<<<<<<<<<<<<<<<-------------------->>>>>>>>>>>>>>>>>>>>>>>>>>1"
               apt-get install apt-transport-https
+              echo "<<<<<<<<<<<<<<<<<<<<<-------------------->>>>>>>>>>>>>>>>>>>>>>>>>>2"
               echo "deb [arch=amd64] https://aptmo.trafficmanager.net/repos/dotnet-release/ trusty main" > /etc/apt/sources.list.d/dotnetdev.list
+              echo "<<<<<<<<<<<<<<<<<<<<<-------------------->>>>>>>>>>>>>>>>>>>>>>>>>>3"
               apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 417A0893
+              echo "<<<<<<<<<<<<<<<<<<<<<-------------------->>>>>>>>>>>>>>>>>>>>>>>>>>4"
               apt-get install dotnet-sdk-2.0.2
+              echo "<<<<<<<<<<<<<<<<<<<<<-------------------->>>>>>>>>>>>>>>>>>>>>>>>>>5"
       - run: 
           command: |
                dotnet restore
