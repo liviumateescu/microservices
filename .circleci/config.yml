@@ -5,5 +5,4 @@ jobs:
     steps:
       - checkout
       - run: 
-          name: Lista surse
           commad: ls -al
