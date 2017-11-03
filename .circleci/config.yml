@@ -11,7 +11,6 @@ jobs:
               curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
               mv microsoft.gpg /etc/apt/trusted.gpg.d/microsoft.gpg
               apt-get update
-              apt-get upgrade
               echo "<<<<<<<<<<<<<<<<<<<<<-------------------->>>>>>>>>>>>>>>>>>>>>>>>>>1"
               apt-get install apt-transport-https
               echo "<<<<<<<<<<<<<<<<<<<<<-------------------->>>>>>>>>>>>>>>>>>>>>>>>>>2"
