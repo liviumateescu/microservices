@@ -4,4 +4,6 @@ jobs:
     machine: true
     steps:
       - checkout
-      - run: pip install -r requirements/dev.txt
+      - run: 
+          name: Lista surse
+          commad: sudo sh -c 'echo "deb [arch=amd64] https://aptmo.trafficmanager.net/repos/dotnet-release/ trusty main" > /etc/apt/sources.list.d/dotnetdev.list'
