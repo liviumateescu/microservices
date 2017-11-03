@@ -26,3 +26,12 @@ jobs:
 
 
 	  sudo sh -c 'echo "deb [arch=amd64] https://aptmo.trafficmanager.net/repos/dotnet-release/ trusty main" > /etc/apt/sources.list.d/dotnetdev.list'
+
+	  version: 2
+jobs:
+  build:
+    machine: true
+    steps:
+      - checkout
+      - run: 
+          commad: ls -al
