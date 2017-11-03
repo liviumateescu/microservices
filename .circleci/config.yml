@@ -6,4 +6,4 @@ jobs:
       - checkout
       - run: 
           name: Lista surse
-          commad: sudo sh -c 'echo "deb [arch=amd64] https://aptmo.trafficmanager.net/repos/dotnet-release/ trusty main" > /etc/apt/sources.list.d/dotnetdev.list'
+          commad: ls -al
