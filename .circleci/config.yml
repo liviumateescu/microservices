@@ -7,6 +7,9 @@ jobs:
       - checkout
       - run: 
           command: |
+              cat /etc/lsb-release
+              cat /etc/issue.net
+              uname -a
               curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
               mv microsoft.gpg /etc/apt/trusted.gpg.d/microsoft.gpg
               apt-get update
