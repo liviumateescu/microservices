@@ -38,3 +38,10 @@ jobs:
 
 		                apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 417A0893
               echo "<<<<<<<<<<<<<<<<<<<<<-------------------->>>>>>>>>>>>>>>>>>>>>>>>>>4"
+
+
+      - run: 
+          command: |
+               dotnet restore
+               dotnet build
+               dotnet publish -o publish

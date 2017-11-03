@@ -18,9 +18,4 @@ jobs:
               echo "<<<<<<<<<<<<<<<<<<<<<-------------------->>>>>>>>>>>>>>>>>>>>>>>>>>3"
               apt-get install dotnet-sdk-2.0.2
               echo "<<<<<<<<<<<<<<<<<<<<<-------------------->>>>>>>>>>>>>>>>>>>>>>>>>>5"
-      - run: 
-          command: |
-               dotnet restore
-               dotnet build
-               dotnet publish -o publish
       - run: echo "no tests 2"
