@@ -6,12 +6,14 @@ jobs:
     steps:
       - checkout
       - run: 
-          command: |  
+          command: |
+              curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
+              mv microsoft.gpg /etc/apt/trusted.gpg.d/microsoft.gpg
               apt-get update
               echo "<<<<<<<<<<<<<<<<<<<<<-------------------->>>>>>>>>>>>>>>>>>>>>>>>>>1"
               apt-get install apt-transport-https
               echo "<<<<<<<<<<<<<<<<<<<<<-------------------->>>>>>>>>>>>>>>>>>>>>>>>>>2"
-              echo "deb [arch=amd64] https://aptmo.trafficmanager.net/repos/microsoft-ubuntu-trusty-prod trusty main" > /etc/apt/sources.list.d/dotnetdev.list
+              echo "deb [arch=amd64] https://packages.microsoft.com/repos/microsoft-ubuntu-trusty-prod trusty main" > /etc/apt/sources.list.d/dotnetdev.list
               echo "<<<<<<<<<<<<<<<<<<<<<-------------------->>>>>>>>>>>>>>>>>>>>>>>>>>3"
               apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 417A0893
               echo "<<<<<<<<<<<<<<<<<<<<<-------------------->>>>>>>>>>>>>>>>>>>>>>>>>>4"
