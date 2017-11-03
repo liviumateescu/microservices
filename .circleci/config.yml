@@ -11,7 +11,7 @@ jobs:
               apt-get install apt-transport-https
               echo "deb [arch=amd64] https://aptmo.trafficmanager.net/repos/dotnet-release/ trusty main" > /etc/apt/sources.list.d/dotnetdev.list
               apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 417A0893
-              apt-get install dotnet-sdk-2.0.0
+              apt-get install dotnet-sdk-2.0.2
       - run: 
           command: |
                dotnet restore
