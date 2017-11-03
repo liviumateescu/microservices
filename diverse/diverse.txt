@@ -35,3 +35,6 @@ jobs:
       - checkout
       - run: 
           commad: ls -al
+
+		                apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 417A0893
+              echo "<<<<<<<<<<<<<<<<<<<<<-------------------->>>>>>>>>>>>>>>>>>>>>>>>>>4"
